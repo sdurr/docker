@@ -1,3 +1,3 @@
-docker build -t ssh .
-docker run -d -P --name test_ssh ssh
-docker port test_ssh 22
+docker build --tag="coucou:42" .
+docker run -d --hostname=42born2code -p 22 -it coucou:42
+
